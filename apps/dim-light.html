@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — DimLight</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #FFFBF5;
+      --surface: #FFFFFF;
+      --text: #1A140F;
+      --text-muted: #5A5048;
+      --border: #EDE3D3;
+      --accent: #B8860B;
+      --accent-bg: #FDF3DD;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #17130E;
+        --surface: #1F1A13;
+        --text: #F5EFE4;
+        --text-muted: #B8AC9B;
+        --border: #33291B;
+        --accent: #E8B84B;
+        --accent-bg: #2A2210;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), #8a6408);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .brand-name {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+    }
+    .updated {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin: 0 0 40px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 40px 0 12px;
+      letter-spacing: -0.01em;
+    }
+    p { margin: 0 0 14px; color: var(--text); }
+    ul { margin: 0 0 14px; padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin: 0 0 14px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 0 14px;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .contact {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 40px;
+    }
+    .contact p { margin: 0; }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    code {
+      background: var(--accent-bg);
+      color: var(--accent);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="brand-icon">💡</div>
+      <div class="brand-name">DimLight</div>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: September 7, 2026</p>
+
+    <p>
+      This Privacy Policy describes how DimLight ("the app", "we", "us") handles
+      information when you use our Android application. DimLight is a screen
+      brightness control app that lets you adjust your device's brightness
+      system-wide, apply an extra-dim overlay, save brightness presets, and
+      schedule automatic night dimming.
+    </p>
+
+    <h2>Information We Do Not Collect</h2>
+    <p>
+      DimLight does not require an account, does not collect your name, email,
+      or contact details, and does not read or transmit your personal files,
+      photos, or messages. The app's core brightness, preset, and schedule
+      settings are stored only on your device and are never sent to us.
+    </p>
+
+    <h2>Permissions We Request</h2>
+    <div class="card">
+      <table>
+        <tr>
+          <th>Permission</th>
+          <th>Why we need it</th>
+        </tr>
+        <tr>
+          <td><code>WRITE_SETTINGS</code></td>
+          <td>Lets DimLight change your device's system-wide screen brightness when you enable "Control system-wide" in the app. This permission is only requested after you explicitly turn that toggle on.</td>
+        </tr>
+        <tr>
+          <td><code>SYSTEM_ALERT_WINDOW</code></td>
+          <td>Lets DimLight draw the optional "Extra Dim" overlay on top of other apps, so you can dim your screen darker than your device's hardware minimum.</td>
+        </tr>
+        <tr>
+          <td><code>POST_NOTIFICATIONS</code></td>
+          <td>Lets DimLight show a status bar notification while the Extra Dim overlay is active, so you can turn it off quickly without opening the app.</td>
+        </tr>
+        <tr>
+          <td><code>FOREGROUND_SERVICE</code></td>
+          <td>Keeps the Extra Dim overlay running reliably while the app is in the background, as required by Android for apps that draw persistent overlays.</td>
+        </tr>
+      </table>
+    </div>
+    <p>
+      None of these permissions are used to collect or transmit personal data —
+      they exist solely to let the app control your screen's appearance, as
+      described above.
+    </p>
+
+    <h2>Advertising (Google AdMob)</h2>
+    <p>
+      DimLight uses <strong>Google AdMob</strong> to display advertisements
+      within the app. AdMob may collect and process certain data to serve ads,
+      including relevant and personalized ads where permitted by your consent
+      and applicable law. This may include:
+    </p>
+    <ul>
+      <li>Device identifiers (such as the Android Advertising ID)</li>
+      <li>IP address and approximate location</li>
+      <li>Device information (model, OS version, language, screen size)</li>
+      <li>Ad interaction data (impressions, clicks, and app usage related to ads)</li>
+    </ul>
+    <p>
+      This data is collected and processed by Google in accordance with the
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+      and the
+      <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob data collection disclosure</a>.
+      Where required (for example, under GDPR in the EEA/UK), DimLight will
+      present a consent form before showing personalized ads, and you can
+      choose to see non-personalized ads instead.
+    </p>
+    <p>
+      You can review or reset your advertising identifier, and control ad
+      personalization at the device level, from your Android Settings under
+      <em>Google &rarr; Ads</em>.
+    </p>
+
+    <h2>Data Storage</h2>
+    <p>
+      All app preferences — your saved brightness level, presets, extra-dim
+      setting, and night schedule — are stored locally on your device using
+      standard Android app storage. We do not operate any backend server that
+      receives or stores this information.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      Aside from Google AdMob described above, DimLight does not share data
+      with any other third-party service, analytics provider, or advertiser.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      DimLight is not directed at children under 13, and we do not knowingly
+      collect personal information from children. If ads are shown to a user
+      identified as a child, DimLight relies on AdMob's child-directed
+      treatment settings to serve only non-personalized, appropriate ads as
+      required by applicable law (e.g. COPPA).
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Changes will be
+      posted on this page with an updated "Last updated" date. Continued use
+      of the app after changes are posted constitutes acceptance of the
+      revised policy.
+    </p>
+
+    <div class="contact">
+      <span class="badge">Contact</span>
+      <p>
+        If you have questions about this Privacy Policy or how DimLight
+        handles data, contact us at
+        <a href="mailto:warisalikhan29@gmail.com">warisalikhan29@gmail.com</a>.
+      </p>
+    </div>
+
+    <footer>
+      DimLight — Package: com.techi4u.dimlight.brightness
+    </footer>
+  </div>
+</body>
+</html>
